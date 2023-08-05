@@ -12,3 +12,11 @@ window.onload = function () {
         referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
     }
 };
+
+const menu = document.querySelector('#mobile-menu')
+const menuLinks = document.querySelector('.navbar__menu')
+
+menu.addEventListener('click', function() {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+})
